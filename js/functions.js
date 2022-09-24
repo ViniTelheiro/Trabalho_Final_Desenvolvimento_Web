@@ -1,4 +1,4 @@
-//window.alert('esse site foi feito para o uma disciplina da faculdade, portanto essa empresa é ficticia.')
+window.alert('esse site foi feito para o uma disciplina da faculdade, portanto essa empresa é ficticia.')
 
 function show(content){
     let contents = ['quem_somos','produtos']
