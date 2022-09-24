@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financonsulta</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/functions.js"></script>
+</head>
+<body>
+    <header class="headder">
+        <table class="logo_table">
+            <td>
+                <img class="logo" src="./images/Logo.png" alt="Logo da empresa">
+            </td>
+            <td>
+                <p class="titulo">Financonsultas</p>
+            </td>
+        </table>
+        <table class="nav_table">
+            <td>
+                <a class="link" onclick="show('quem_somos')"><ul><li>Quem Somos:</li></ul></a>
+            </td>
+            <td>
+                <a class="link" onclick="show('produtos')"><ul><li>Nossos Produtos:</li></ul></a>
+            </td>
+        </table>
+    </header>
+
+    <div id="quem_somos" class="div">
+        <h3 class="sub_titulo">Quem somos?</h3>
+        <table>
+            <td>
+                <img class="foto" src="./images/Predio.jpg" alt="Prédio da empresa">
+            
+            <td>
+                <p class="conteudo">
+                    Somos uma empresa de consultoria, fundada em 2022. Nossos clientes vão desde empresas até pessoas, sendo assim, nossos produtos variam conforme o cliente desejar.
+                    <br>A empresa surgiu da idéia de oferecer consultoria financeira acessível e completa tanto para empresas, quanto para pessoas simples que também precisam.
+                    <br>Nossa equipe é formada por pessoas de diferentes áreas, como economistas e estatísticos e nosso lema é transparência com o cliente e total comunicação entre nossas equipes.
+                    
+            </td>
+        </table>
+
+    </div>
+
+    <div id="produtos" class="div">
+        <h3 class="sub_titulo">Nossos Produtos:</h3>
+        <h4 class='sub_titulo'>passe o mouse sobre os itens:</h4>
+        <table class="table_product">
+            <td>
+                <img id="Img_pf" class="our_products" onmouseover="show_list('Pf')" onmouseout="hiden_list('Pf')" src="./images/pf.png" alt="pessoa física">
+                <div id="Pf" class="product_list">
+                    <h5>Pessoa Física:</h5>
+                    <ul>
+                        <li>Aconselhamento;</li>
+                        <li>Educação financeira;</li>
+                        <li>Acompanhamento;</li>
+                        <li>Outros produtos.</li>
+                    </ul>
+            </td>
+            <td>
+                <img  id="Img_pj" class="our_products"  onmouseover="show_list('Pj')" onmouseout="hiden_list('Pj')" src="./images/pj.png" alt="Pessoa jurídica">     
+                <div id="Pj" class="product_list">
+                    <h5>Pessoa jurídica:</h5>
+                    <ul>
+                        <li>Aconselhamento;</li>
+                        <li>Investimentos;</li>
+                        <li>Acompanhamento;</li>
+                        <li>Compras e aquisições;</li>
+                        <li>Outros produtos.</li>
+                    </ul>
+                </div>
+            </td>
+        </table>
+   
+    </div>
+
+    <footer class="footer">
+        <table class="footer_table">
+            <td>
+                <img class="email" src="./images/email.png" alt="email">
+            </td>
+            <td>
+                <a class='email_link'   type="email">ourgenericemail@generic.com</a>
+            </td>
+        </table>
+        <p class="endereço">
+           Brasil, São Paulo. Rua genérica número 3.
+            <br>av. generica. sala 1234
+
+        </p>
+
+
+    </footer>
+</body>
+</html>
